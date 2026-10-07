@@ -26,16 +26,25 @@ class MainActivity : AppCompatActivity() {
         Home.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
         val Login = findViewById<ImageView>(R.id.imageView2)
         Login.setOnClickListener {
-            val intent = Intent(this,MainActivity2::class.java)
+            val intent = Intent(this,MainActivity3::class.java)
             startActivity(intent)
+            finish()
+        }
+        val Shopingcart = findViewById<ImageView>(R.id.imageView3)
+        Shopingcart.setOnClickListener {
+            val intent = Intent(this,MainActivity3::class.java)
+            startActivity(intent)
+            finish()
         }
         val Game1 = findViewById<Button>(R.id.button8)
         Game1.setOnClickListener {
             val intent = Intent(this,MainActivity2::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

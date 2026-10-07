@@ -3,6 +3,7 @@ package com.example.eldorado
 import android.content.Intent
 import android.widget.ImageView
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,12 +23,33 @@ class MainActivity2 : AppCompatActivity() {
         }
         val Home = findViewById<ImageView>(R.id.imageView)
         Home.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
             finish()
         }
         val Login = findViewById<ImageView>(R.id.imageView2)
         Login.setOnClickListener {
-            val intent = Intent(this,MainActivity2::class.java)
+            val intent = Intent(this,MainActivity3::class.java)
             startActivity(intent)
+            finish()
+        }
+        val Shopingcart = findViewById<ImageView>(R.id.imageView3)
+        Shopingcart.setOnClickListener {
+            val intent = Intent(this,MainActivity3::class.java)
+            startActivity(intent)
+            finish()
+        }
+        val BackButton = findViewById<Button>(R.id.button)
+        BackButton.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        val NextButton = findViewById<Button>(R.id.button2)
+        NextButton.setOnClickListener {
+            val intent = Intent(this,MainActivity3::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
