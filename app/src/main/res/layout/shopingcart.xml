@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    android:background="@drawable/home"
+    tools:context=".shopingcart">
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,81 +45,38 @@
         app:layout_constraintVertical_bias="0.675"
         app:srcCompat="@drawable/winkelwagen" />
 
-    <TextView
+    <SearchView
         android:id="@+id/button16"
         android:layout_width="350dp"
         android:layout_height="35dp"
         android:layout_marginTop="100dp"
-        android:text="Game name "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="103dp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button24"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
-
-    <Button
-        android:id="@+id/button24"
-        android:layout_width="103dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button25"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button17"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
-
-    <Button
-        android:id="@+id/button25"
-        android:layout_width="102dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button26"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button24"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
-
-    <Button
-        android:id="@+id/button26"
-        android:layout_width="102dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:text="Button"
+        android:text="Shoping cart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button25"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="127dp"
         android:layout_height="58dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="52dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="129dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="44dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.797"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

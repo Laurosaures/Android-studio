@@ -8,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.widget.Toast
 
 class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,31 +21,31 @@ class MainActivity3 : AppCompatActivity() {
         }
         val Home = findViewById<ImageView>(R.id.imageView)
         Home.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,home::class.java)
             startActivity(intent)
             finish()
         }
         val Login = findViewById<ImageView>(R.id.imageView2)
         Login.setOnClickListener {
-            val intent = Intent(this,MainActivity3::class.java)
+            val intent = Intent(this,login::class.java)
             startActivity(intent)
             finish()
         }
         val Shopingcart = findViewById<ImageView>(R.id.imageView3)
         Shopingcart.setOnClickListener {
-            val intent = Intent(this,MainActivity3::class.java)
+            val intent = Intent(this,shopingcart::class.java)
             startActivity(intent)
             finish()
         }
         val BackButton = findViewById<Button>(R.id.button)
         BackButton.setOnClickListener {
-            val intent = Intent(this,MainActivity2::class.java)
+            val intent = Intent(this,home::class.java)
             startActivity(intent)
             finish()
         }
         val NextButton = findViewById<Button>(R.id.button2)
         NextButton.setOnClickListener {
-            val intent = Intent(this,MainActivity4::class.java)
+            val intent = Intent(this,shopingcart::class.java)
             startActivity(intent)
             finish()
         }

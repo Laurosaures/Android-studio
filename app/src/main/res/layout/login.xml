@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity5">
+    android:background="@drawable/home"
+    tools:context=".login">
 
     <ImageView
         android:id="@+id/imageView"
@@ -44,6 +45,18 @@
         app:layout_constraintVertical_bias="0.675"
         app:srcCompat="@drawable/winkelwagen" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="320dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintVertical_bias="0.255"
+        app:srcCompat="@drawable/loginveld" />
+
     <SearchView
         android:id="@+id/button16"
         android:layout_width="350dp"
@@ -53,16 +66,5 @@
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="410dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:text="Thanks for your order"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
