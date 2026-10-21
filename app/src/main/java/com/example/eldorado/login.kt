@@ -19,7 +19,6 @@ class login : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
 
-
         }
         val Home = findViewById<ImageView>(R.id.imageView)
         Home.setOnClickListener {
@@ -39,9 +38,15 @@ class login : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-        val Game1 = findViewById<Button>(R.id.button8)
-        Game1.setOnClickListener {
-            val intent = Intent(this,MainActivity3::class.java)
+        val LoginButtonB = findViewById<ImageView>(R.id.imageView7)
+        LoginButtonB.setOnClickListener {
+            val intent = Intent(this,home::class.java)
+            startActivity(intent)
+            finish()
+        }
+        val LoginButton = findViewById<ImageView>(R.id.imageView8)
+        LoginButton.setOnClickListener {
+            val intent = Intent(this,home::class.java)
             startActivity(intent)
             finish()
         }

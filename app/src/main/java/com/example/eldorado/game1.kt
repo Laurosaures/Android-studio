@@ -9,11 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity3 : AppCompatActivity() {
+class game1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main3)
+        setContentView(R.layout.game1)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -37,14 +37,14 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-        val BackButton = findViewById<Button>(R.id.button)
-        BackButton.setOnClickListener {
-            val intent = Intent(this,home::class.java)
+        val CartButtonB = findViewById<ImageView>(R.id.imageView9)
+        CartButtonB.setOnClickListener {
+            val intent = Intent(this,shopingcart::class.java)
             startActivity(intent)
             finish()
         }
-        val NextButton = findViewById<Button>(R.id.button2)
-        NextButton.setOnClickListener {
+        val CartButton = findViewById<ImageView>(R.id.imageView10)
+        CartButton.setOnClickListener {
             val intent = Intent(this,shopingcart::class.java)
             startActivity(intent)
             finish()

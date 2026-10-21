@@ -19,7 +19,7 @@
             android:name=".shopingcart"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".game1"
             android:exported="false" />
         <activity
             android:name=".home"

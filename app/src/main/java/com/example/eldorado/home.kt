@@ -38,6 +38,11 @@ class home : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        val test = findViewById<ImageView>(R.id.imageView4)
+        test.setOnClickListener {
+            val intent = Intent(this,shopingcart::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
-
 }
