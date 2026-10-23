@@ -1,3 +1,15 @@
 package com.example.eldorado
 
-class thema : FigmaScreen() { override val page = "thema" }
+// Inhoud en knoppen van deze pagina.
+class thema : FigmaScreen() {
+
+    override val page = "thema"
+
+    override fun showPage() {
+        tabs()
+        for (i in 0..7) {
+            gameRow(i, 24, 330 + i * 66, 345, 48)
+        }
+    }
+
+}
